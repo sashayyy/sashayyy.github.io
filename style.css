@@ -1,0 +1,37 @@
+* {
+  padding: 100;
+  margin: 100;
+  background: rgb(11, 11, 11);
+}
+canvas {
+  background: #0b0b0b;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.boom {
+    animation: boom 0.1s 1;
+}
+@keyframes boom {
+    50% {box-shadow: 1px 9px 15px #dd85e7;}
+}
+.button {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  top: 25px;
+  text-align: center;
+  width: 120px;
+  height: 35px;
+  border-color: #0b0b0b;
+  border-radius: 5px;
+  background: #0b0b0b;
+}
+.button:hover {
+  animation-name: shadow;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes shadow {
+  100% {box-shadow: 1px 5px 10px rgb(221, 133, 231);}
+}
