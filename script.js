@@ -2,7 +2,7 @@ let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 
 const background = new Image();
-background.src = "C:/js projects/chuchel/img/background.png";
+background.src = "img/background.png";
 
 function drawBackground() {
     ctx.drawImage(background, 0, 0, 500, 500);
@@ -23,20 +23,17 @@ let bestScore = 0;
 let leftPressed = false;
 let rightPressed = false;
 
-let chuchel = new Image();
-chuchel.src = "C:/js projects/chuchel/img/chuchel.png";
-
 let chuchelRight1 = new Image();  
-chuchelRight1.src = "C:/js projects/chuchel/img/chuchel_right_1.png";
+chuchelRight1.src = "img/chuchel_right_1.png";
 
 let chuchelRight2 = new Image(); 
-chuchelRight2.src = "C:/js projects/chuchel/img/chuchel_right_2.png";
+chuchelRight2.src = "img/chuchel_right_2.png";
 
 let chuchelLeft1 = new Image();
-chuchelLeft1.src = "C:/js projects/chuchel/img/chuchel_left_1.png";
+chuchelLeft1.src = "img/chuchel_left_1.png";
 
 let chuchelLeft2 = new Image();
-chuchelLeft2.src = "C:/js projects/chuchel/img/chuchel_left_2.png";
+chuchelLeft2.src = "img/chuchel_left_2.png";
 
 let dirRight = [];
 dirRight.push(chuchelRight1);
@@ -57,22 +54,19 @@ function drawChuchel() {
 }
 
 let heart = new Image();
-heart.src = "C:/js projects/chuchel/img/life.png";
+heart.src = "img/life.png";
 
 let burger = new Image();
-burger.src = "C:/js projects/chuchel/img/burgerkinggovno.png";
+burger.src = "img/burgerkinggovno.png";
 
 let dinamit = new Image();
-dinamit.src = "C:/js projects/chuchel/img/dinamit.png";
+dinamit.src = "img/dinamit.png";
 
 let beer = new Image();
-beer.src = "C:/js projects/chuchel/img/beer.png";
+beer.src = "img/beer.png";
 
 let muhomor = new Image();
-muhomor.src = "C:/js projects/chuchel/img/muhomor.png";
-
-let start = new Image();
-start.src = "C:/js projects/chuchel/img/start.png";
+muhomor.src = "img/muhomor.png";
 
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
