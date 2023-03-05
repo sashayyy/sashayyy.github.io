@@ -1,37 +1,48 @@
 * {
-  padding: 100;
-  margin: 100;
-  background: rgb(11, 11, 11);
-}
-canvas {
-  background: #0b0b0b;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-.boom {
-    animation: boom 0.1s 1;
-}
-@keyframes boom {
-    50% {box-shadow: 1px 9px 15px #dd85e7;}
-}
-.button {
-  margin: 0 auto;
+    padding: 100;
+    margin: 100;
+    display: block;
+    background-color: #020202;
+    position: relative;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto;
+  }
+
+.startButton {
   position: relative;
   display: block;
-  top: 25px;
-  text-align: center;
-  width: 120px;
-  height: 35px;
-  border-color: #0b0b0b;
-  border-radius: 5px;
-  background: #0b0b0b;
+  margin: 0 auto;
+  top: 30px;
+  width: 130px;
+  height: 40px;
+  color: #fbd6fd;
+  background: transparent;
+  border-radius: 0px;
+  outline: transparent;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  opacity: 0.6;
 }
-.button:hover {
-  animation-name: shadow;
-  animation-duration: 0.5s;
+.startButton:hover {
+  animation-name: bright;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
-@keyframes shadow {
-  100% {box-shadow: 1px 5px 10px rgb(221, 133, 231);}
+@keyframes bright {
+  100% {
+    opacity: 1;
+  }
+}
+.disco{
+    animation: flash 0.8s infinite;
+}
+
+@keyframes flash {
+    50% {
+      opacity: 0.6;
+    } 100% {
+      opacity: 1;
+    }
 }
